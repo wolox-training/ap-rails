@@ -1,0 +1,30 @@
+# This is the configuration used to check the rubocop source code.
+
+AllCops:
+  Exclude:
+    - db/**/*
+    - docs/**/*
+    - config/**/*
+    - bin/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 99
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+require:
+  - rubocop-rails
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
